@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brow &amp; Mak — брови и ресницы в Санкт-Петербурге, запись в Telegram</title>
+<meta name="description" content="Студия Brow &amp; Mak в Санкт-Петербурге: коррекция и окрашивание бровей, ламинирование. Записаться можно на странице или в Telegram, без звонков.">
+<meta property="og:title" content="Brow &amp; Mak — брови и ресницы в Санкт-Петербурге">
+<meta property="og:description" content="Коррекция, окрашивание, ламинирование. Запись в Telegram, без звонков.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ktoto1300.github.io/macket/brow-mak/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231a1714'/%3E%3Ctext x='16' y='22' font-family='Palatino,Georgia,serif' font-size='14' fill='%23f6f3ee' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#1a1714; --ink-2:#463c35; --bone:#f6f3ee; --bone-2:#ece5dc;
+    --ox:#7d2f2a; --line:#ddd3c7;
+    --d:"Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
+    --t:"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:32px; --s7:48px; --s8:64px; --s9:96px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bone);color:var(--ink);font:16px/1.62 var(--t);overflow-x:hidden;
+       -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 var(--s6)}
+  a:focus-visible,summary:focus-visible{outline:2px solid var(--ox);outline-offset:3px}
+
+  @keyframes intro{from{opacity:.001;transform:translateY(12px)}to{opacity:1;transform:none}}
+  @keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  @keyframes rise{from{opacity:.001;transform:translateY(18px)}to{opacity:1;transform:none}}
+  @keyframes answer{from{transform:translateY(-6px)}to{transform:none}}
+  @keyframes dockin{from{transform:translateY(110%)}to{transform:none}}
+  .in{animation:rise .62s cubic-bezier(.22,.7,.2,1) both}
+
+  /* шапка */
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:var(--s4);
+             padding:var(--s4) var(--s6)}
+  .top{position:relative}
+  .top::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--line);
+              transform-origin:0 50%;animation:draw .8s cubic-bezier(.22,.7,.2,1) both}
+  .brand{font:400 20px/1.1 var(--d);letter-spacing:.06em;text-decoration:none}
+  .brand small{display:block;font:400 12px/1 var(--t);letter-spacing:.14em;color:var(--ox);margin-top:8px}
+  .top .city{font-size:13px;color:var(--ink-2)}
+
+  /* первый экран: крупная типографика, широкие поля */
+  .hero .wrap{padding-top:var(--s9);padding-bottom:var(--s8)}
+  .hero h1{font:400 clamp(34px,6.2vw,74px)/1.04 var(--d);letter-spacing:-.015em;max-width:17ch}
+  .hero .lead{margin-top:var(--s5);max-width:44ch;color:var(--ink-2);font-size:18px}
+  .hero .lead b{font-weight:400;color:var(--ink);border-bottom:1px solid var(--ox)}
+  .acts{display:flex;gap:var(--s5);align-items:center;flex-wrap:wrap;margin-top:var(--s6)}
+  .go{padding:16px 28px;background:var(--ink);color:var(--bone);text-decoration:none;font-size:15px;
+      transition:background .18s ease}
+  .go:hover{background:var(--ox)}
+  .link{position:relative;color:var(--ink);text-decoration:none;font-size:15px}
+  .link::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--ink);
+               transform:scaleX(0);transform-origin:0 50%;transition:transform .26s cubic-bezier(.22,.7,.2,1)}
+  .link:hover::after,.link:focus-visible::after{transform:scaleX(1)}
+
+  .hero h1{animation:intro .7s cubic-bezier(.22,.7,.2,1) both}
+  .hero .lead{animation:intro .7s cubic-bezier(.22,.7,.2,1) .07s both}
+  .acts{animation:intro .7s cubic-bezier(.22,.7,.2,1) .14s both}
+
+  /* секции */
+  section{border-top:1px solid var(--line)}
+  .sec{padding:var(--s8) 0}
+  .sec h2{font:400 clamp(23px,3.2vw,33px)/1.15 var(--d);letter-spacing:-.005em;max-width:24ch}
+  .sec .sub{margin-top:var(--s3);font-size:14px;color:var(--ink-2);max-width:52ch}
+
+  /* услуги: строки ведомости */
+  .list{margin-top:var(--s6);border-top:1px solid var(--line)}
+  .list .row{display:grid;grid-template-columns:1fr auto;gap:var(--s4);align-items:baseline;
+             padding:var(--s4) 0;position:relative}
+  .list .row::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--line);
+                    transform-origin:0 50%;animation:draw .5s cubic-bezier(.22,.7,.2,1) both}
+  .list .row:nth-child(1)::after{animation-delay:.04s}
+  .list .row:nth-child(2)::after{animation-delay:.12s}
+  .list .row:nth-child(3)::after{animation-delay:.2s}
+  .list .row:nth-child(4)::after{animation-delay:.28s}
+  .list .row:nth-child(5)::after{animation-delay:.36s}
+  .list .row h3{font:400 20px/1.35 var(--d)}
+  .list .row p{margin-top:var(--s1);font-size:14px;color:var(--ink-2);max-width:48ch}
+  .list .row .slot{font-size:14px;color:var(--ink-2);letter-spacing:.12em;white-space:nowrap;
+                   border-bottom:1px solid var(--line);padding-bottom:4px;transition:color .2s ease,border-color .2s ease}
+  .list .row:hover .slot{color:var(--ox);border-color:var(--ox)}
+  .note{margin-top:var(--s4);font-size:13px;color:var(--ink-2)}
+
+  /* как проходит визит: прозой в две колонки */
+  .prose{margin-top:var(--s6);display:grid;grid-template-columns:1fr 1fr;gap:var(--s7)}
+  .prose h3{font:400 20px/1.3 var(--d)}
+  .prose p{margin-top:var(--s3);font-size:15px;color:var(--ink-2);max-width:42ch}
+  .shot{border:1px solid var(--line);padding:var(--s5);display:flex;flex-direction:column;gap:var(--s3);
+        background:repeating-linear-gradient(135deg,var(--bone-2) 0 8px,var(--bone) 8px 16px)}
+  .shot strong{font:400 14px/1.3 var(--t);color:var(--ink-2);letter-spacing:.02em}
+  .shot em{font:400 12.5px/1.5 var(--t);color:var(--ink-2);font-style:normal}
+  .shot ul{list-style:none;display:grid;gap:var(--s2);margin-top:auto}
+  .shot li{font-size:14px;color:var(--ink-2);display:flex;gap:var(--s2)}
+  .shot li::before{content:"·";color:var(--ox);font-size:16px;line-height:1}
+
+  /* вопросы */
+  .faq{margin-top:var(--s6);border-top:1px solid var(--line)}
+  details{border-bottom:1px solid var(--line)}
+  summary{display:flex;justify-content:space-between;gap:var(--s4);padding:var(--s4) 0;cursor:pointer;
+          list-style:none;font:400 20px/1.3 var(--d)}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font:400 20px/1 var(--t);color:var(--ink-2);
+                 transition:transform .3s cubic-bezier(.22,.7,.2,1),color .2s ease}
+  details[open] summary{padding-bottom:var(--s2)}
+  details[open] summary::after{transform:rotate(180deg);color:var(--ox)}
+  details .ans{display:grid;grid-template-rows:0fr;transition:grid-template-rows .38s cubic-bezier(.22,.7,.2,1)}
+  details[open] .ans{grid-template-rows:1fr}
+  details .ans>div{overflow:hidden}
+  details p{padding:0 0 var(--s4);font-size:15px;color:var(--ink-2);max-width:58ch}
+  details[open] .ans p{animation:answer .34s cubic-bezier(.22,.7,.2,1) both}
+  details.closing .ans{grid-template-rows:0fr}
+  details.closing .ans p{animation:none}
+  details.closing summary::after{transform:none}
+
+  /* подвал */
+  footer{border-top:1px solid var(--line)}
+  footer .wrap{padding:var(--s7) var(--s6) var(--s6);display:grid;grid-template-columns:1.3fr .7fr .7fr;gap:var(--s5)}
+  footer .k{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ox)}
+  footer p,footer a{font-size:15px;color:var(--ink-2);text-decoration:none;margin-top:var(--s3);display:block}
+  footer a:hover{color:var(--ink)}
+  footer a.un{position:relative}
+  footer a.un::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--ink);
+                     transform:scaleX(0);transform-origin:0 50%;transition:transform .26s cubic-bezier(.22,.7,.2,1)}
+  footer a.un:hover::after,footer a.un:focus-visible::after{transform:scaleX(1)}
+  .legal{border-top:1px solid var(--line);padding:var(--s4) 0 var(--s5)}
+  .legal .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:wrap;
+               font-size:12px;color:var(--ink-2)}
+
+  /* телефон: липкая пара кнопок */
+  .dock{position:fixed;left:0;right:0;bottom:0;display:none;border-top:1px solid var(--line);
+        animation:dockin .45s cubic-bezier(.22,.7,.2,1) .25s both}
+  .dock a{flex:1;display:flex;align-items:center;justify-content:center;padding:16px 12px;
+          text-decoration:none;font-size:14.5px;background:var(--ink);color:var(--bone)}
+  .dock a.b{background:var(--ox)}
+
+  @media (max-width:900px){
+    .wrap{padding:0 var(--s5)}
+    .hero .wrap{padding-top:var(--s7);padding-bottom:var(--s6)}
+    .prose{grid-template-columns:1fr;gap:var(--s5)}
+    .sec{padding:var(--s6) 0}
+    footer .wrap{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:620px){
+    body{padding-bottom:72px}
+    .top .city{display:none}
+    .list .row{grid-template-columns:1fr;gap:var(--s1)}
+    footer .wrap{grid-template-columns:1fr}
+    .dock{display:flex}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .in,.hero h1,.hero .lead,.acts,.top::after,.dock,.list .row::after,details[open] .ans p{animation:none}
+    .link::after,.list .row .slot,footer a.un::after,summary::after,details .ans{transition:none}
+    html{scroll-behavior:auto}
+  }
+  @media print{
+    .in,.hero h1,.hero .lead,.acts,.dock{animation:none!important;opacity:1!important;transform:none!important}
+    .dock{display:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <a class="brand" href="#">Brow &amp; Mak<small>Санкт-Петербург</small></a>
+    <div class="city">брови и ресницы</div>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Брови, которые держат форму месяц</h1>
+    <p class="lead">Коррекция, окрашивание и ламинирование. Записаться можно <b>здесь или в Telegram</b>, без звонков: выбираете окно, получаете подтверждение.</p>
+    <div class="acts">
+      <a class="go" href="#zapis">Записаться</a>
+      <a class="link" href="#uslugi">Услуги и цены</a>
+    </div>
+  </div>
+</div>
+
+<section class="sec" id="uslugi">
+  <div class="wrap">
+    <h2>Услуги</h2>
+    <p class="sub">Пять позиций, столько обычно и просят. Цены не придумывал, поставлю ваши.</p>
+    <div class="list">
+      <div class="row"><div><h3>Коррекция бровей</h3><p>Форма по строению лица, работа пинцетом и воском.</p></div><div class="slot">___ ₽</div></div>
+      <div class="row"><div><h3>Окрашивание бровей</h3><p>Краска и хна, подтон под цвет волос.</p></div><div class="slot">___ ₽</div></div>
+      <div class="row"><div><h3>Ламинирование бровей</h3><p>Укладка волосков, держится до шести недель.</p></div><div class="slot">___ ₽</div></div>
+      <div class="row"><div><h3>Ламинирование ресниц</h3><p>Изгиб и питание, без наращивания.</p></div><div class="slot">___ ₽</div></div>
+      <div class="row"><div><h3>Комплекс: форма и окрашивание</h3><p>Час с небольшим, самый частый запрос.</p></div><div class="slot">___ ₽</div></div>
+    </div>
+    <p class="note">Скиньте прайс, проставлю суммы в эти строки.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <h2>Как проходит визит</h2>
+    <div class="prose">
+      <div>
+        <h3>Сначала форма</h3>
+        <p>Мастер смотрит на рост волосков и строение лица, показывает, как будет выглядеть форма, и только потом берёт пинцет. Окрашивание идёт после коррекции, иначе краска ляжет неровно.</p>
+      </div>
+      <div>
+        <h3>Запись и напоминание</h3>
+        <p>В боте видно свободные окна на две недели вперёд. За день до визита приходит напоминание, перенести можно там же, окно освобождается для другого клиента.</p>
+      </div>
+      <div class="shot">
+        <strong>Место под фото</strong>
+        <em>сюда пойдут ваши работы до и после</em>
+        <ul>
+          <li>Три четыре работы крупно</li>
+          <li>Рабочее место и инструмент</li>
+          <li>Вход, чтобы вас находили с улицы</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="zapis">
+  <div class="wrap">
+    <h2>Вопросы</h2>
+    <div class="faq">
+      <details open>
+        <summary>Сколько держится ламинирование?</summary>
+        <div class="ans"><div><p>До шести недель на бровях и до восьми на ресницах. Зависит от того, как часто вы моете лицо горячей водой и наносите масла.</p></div></div>
+      </details>
+      <details>
+        <summary>Можно ли прийти без записи?</summary>
+        <div class="ans"><div><p>Лучше записаться: мастер работает с одним человеком и не сможет принять между процедурами. Свободные окна видно в боте.</p></div></div>
+      </details>
+      <details>
+        <summary>А если не хочу писать боту?</summary>
+        <div class="ans"><div><p>Напишите в Telegram обычным сообщением, администратор ответит в часы работы. Телефон поставим ваш, если нужен на странице.</p></div></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="k">Студия</div>
+      <p>Brow &amp; Mak</p>
+      <p>Санкт-Петербург, адрес и карта на странице</p>
+    </div>
+    <div>
+      <div class="k">Запись</div>
+      <p>Каждый день</p>
+      <p>по записи в Telegram</p>
+    </div>
+    <div>
+      <div class="k">Связь</div>
+      <a class="un" href="#zapis">Записаться в Telegram</a>
+      <a class="un" href="mailto:mocreac21@gmail.com">Написать на почту</a>
+    </div>
+  </div>
+  <div class="legal">
+    <div class="wrap">
+      <span>Макет страницы для студии</span>
+      <span>2026</span>
+    </div>
+  </div>
+</footer>
+
+<div class="dock">
+  <a href="#uslugi">Услуги</a>
+  <a class="b" href="#zapis">Записаться</a>
+</div>
+
+<script>
+  (function () {
+    // закрытие вопроса с анимацией, без JS работает нативно
+    document.querySelectorAll('details').forEach(function (d) {
+      var s = d.querySelector('summary');
+      s.addEventListener('click', function (e) {
+        if (!d.open || d.classList.contains('closing')) return;
+        e.preventDefault();
+        d.classList.add('closing');
+        setTimeout(function () { d.open = false; d.classList.remove('closing'); }, 360);
+      });
+    });
+    // появление секций: базово контент виден
+    var nodes = document.querySelectorAll('.sec .wrap > *, footer .wrap > div');
+    if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var io = new IntersectionObserver(function (items) {
+      items.forEach(function (it) {
+        if (it.isIntersecting) { it.target.classList.add('in'); io.unobserve(it.target); }
+      });
+    }, { threshold: 0.15 });
+    nodes.forEach(function (n) { io.observe(n); });
+  })();
+</script>
+
+</body>
+</html>
